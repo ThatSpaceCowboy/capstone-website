@@ -6,13 +6,9 @@
 		<style>
 			body { margin: 0; }
 		</style>
-		<script type="importmap">
-            		{
-              		"imports": {
-                		"three": "https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js",
-                		"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.171.0/examples/jsm/"
-              		}
-            	}
+		<script type="module">
+            		import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.module.js';
+            		import { VRButton } from 'https://cdn.jsdelivr.net/npm/three@0.153.0/examples/jsm/webxr/VRButton.js';
           	</script>
 	</head>
 	<body>
