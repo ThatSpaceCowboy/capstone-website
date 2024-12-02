@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import { VRButton } from 'three/examples/jsm/webxr/VRButton.js'
 
 async function fetchSkyboxImages() {
     const url="https://capstone-final-vxga.onrender.com/get-skybox-images"
@@ -23,7 +22,7 @@ async function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.xr.enabled = true; // Enable VR
     document.body.appendChild(renderer.domElement);
-    document.body.appendChild(VRButton.createButton(renderer));
+    document.body.appendChild(THREE.VRButton.createButton(renderer));
 
     // Load textures for the skybox
     const loader = new THREE.CubeTextureLoader();
