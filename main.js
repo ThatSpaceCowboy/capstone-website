@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { VRButton } from './VRButton.js';
 
 async function fetchSkyboxImages() {
     const url="https://capstone-final-vxga.onrender.com/get-skybox-images"
