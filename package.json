@@ -1,13 +1,16 @@
 {
-  "dependencies": {
-    "three": "^0.171.0"
-  },
-  "devDependencies": {
-    "vite": "^6.0.2"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  }
+  "homepage": "https://ThatSpaceCowboy.github.io/capstone-website",
+"dependencies": {
+  "three": "^0.171.0"
+},
+"devDependencies": {
+  "vite": "^6.0.2"
+},
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "dev": "vite",
+  "build": "vite build",
+  "serve": "vite preview"
+}
 }
